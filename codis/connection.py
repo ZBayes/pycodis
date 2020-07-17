@@ -83,7 +83,7 @@ class CodisConnectionPool(BlockingConnectionPool):
                 #     pass
                 addr = addr.split(':')
                 tmp_list.append((addr[0], int(addr[1])))
-            except Exception, e:
+            except Exception as e:
                 raise ConnectionError("Error while parse zk proxy(%s): %s" %
                                       (child, e.args))
         self.proxy_list = tmp_list
