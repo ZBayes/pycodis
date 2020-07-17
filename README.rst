@@ -1,6 +1,8 @@
 pycodis
 =======
 
+**This repos is originated from https://github.com/smiledaddy/pycodis. I fixed a problem recently and maybe i will do more on it. **
+
 The Python interface to the Codis proxy, used to implement auto-balance and auto-discovery of redis proxy.
 
 Considering we got used to connection redis with redis-py, we could just change the connection pool on the base of redis-py client.
